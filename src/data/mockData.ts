@@ -1,0 +1,97 @@
+import type { Stock, AssetHistory } from '../types';
+
+export const domesticStocks: Stock[] = [
+    {
+        id: '1',
+        name: '삼성전자',
+        ticker: '005930',
+        currentPrice: 72500,
+        currency: 'KRW',
+        quantity: 10,
+        avgPrice: 68000,
+        changeRate: 1.2,
+    },
+    {
+        id: '2',
+        name: 'SK하이닉스',
+        ticker: '000660',
+        currentPrice: 132000,
+        currency: 'KRW',
+        quantity: 5,
+        avgPrice: 125000,
+        changeRate: -0.5,
+    },
+    {
+        id: '3',
+        name: 'NAVER',
+        ticker: '035420',
+        currentPrice: 205000,
+        currency: 'KRW',
+        quantity: 3,
+        avgPrice: 210000,
+        changeRate: 0.8,
+    },
+    {
+        id: '4',
+        name: '카카오',
+        ticker: '035720',
+        currentPrice: 54300,
+        currency: 'KRW',
+        quantity: 20,
+        avgPrice: 58000,
+        changeRate: -1.5,
+    },
+];
+
+export const overseasStocks: Stock[] = [
+    {
+        id: '5',
+        name: 'Apple',
+        ticker: 'AAPL',
+        currentPrice: 185.50,
+        currency: 'USD',
+        quantity: 15,
+        avgPrice: 170.00,
+        changeRate: 2.1,
+    },
+    {
+        id: '6',
+        name: 'Tesla',
+        ticker: 'TSLA',
+        currentPrice: 240.30,
+        currency: 'USD',
+        quantity: 10,
+        avgPrice: 250.00,
+        changeRate: -3.2,
+    },
+    {
+        id: '7',
+        name: 'Microsoft',
+        ticker: 'MSFT',
+        currentPrice: 375.00,
+        currency: 'USD',
+        quantity: 5,
+        avgPrice: 350.00,
+        changeRate: 0.5,
+    },
+    {
+        id: '8',
+        name: 'NVIDIA',
+        ticker: 'NVDA',
+        currentPrice: 480.00,
+        currency: 'USD',
+        quantity: 8,
+        avgPrice: 400.00,
+        changeRate: 4.5,
+    },
+];
+
+export const assetHistoryData: AssetHistory[] = [
+    { date: '2023-11-01', value: 15000000 },
+    { date: '2023-11-05', value: 15200000 },
+    { date: '2023-11-10', value: 14900000 },
+    { date: '2023-11-15', value: 15500000 },
+    { date: '2023-11-20', value: 15800000 },
+    { date: '2023-11-25', value: 16200000 },
+    { date: '2023-11-29', value: 16500000 },
+];
